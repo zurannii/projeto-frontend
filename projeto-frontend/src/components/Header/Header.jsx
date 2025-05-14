@@ -10,13 +10,11 @@ const Header = () => {
                 <img src="./vercel.svg" alt="logo" width={100} />
 
                 <div className="flexCenter h-menu">
-                       <Link href="/">Home</Link>
+                    <Link href="/">Home</Link>
 
                     <Link href="/imoveis">Imóveis</Link>
 
-                    <a href="">
-                        Nosso Valor
-                    </a>
+                    <Link href="/nosso-valor">Nosso Valor</Link>
 
                     <a href="">
                         Consultores

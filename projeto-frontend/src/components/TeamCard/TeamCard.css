@@ -1,0 +1,150 @@
+.equipe-section {
+  margin-top: 48px;
+}
+.equipe-label {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.equipe-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+.equipe-desc {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+.equipe-slider {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.equipe-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0001;
+  overflow: hidden;
+  width: 260px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+  border: 1.5px solid #ddd;
+}
+.equipe-card-img {
+  width: 100%;
+  height: 120px;
+  background: #e5e7eb;
+}
+.equipe-card-body {
+  padding: 18px 16px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.equipe-card-area {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+.equipe-card-nome {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+.equipe-card-desc {
+  color: #666;
+  font-size: 0.95rem;
+}
+@media (max-width: 700px) {
+  .equipe-title {
+    font-size: 1.2rem;
+  }
+  .equipe-slider {
+    gap: 14px;
+  }
+}
+
+.swiper {
+  padding-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2563eb;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px #0002;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.95;
+  transition: box-shadow 0.2s, background 0.2s;
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.equipe-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0001;
+  overflow: hidden;
+  width: 280px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #eee;
+  margin: 0 auto;
+}
+.equipe-card:hover {
+  box-shadow: 0 8px 32px #0002;
+  transform: translateY(-4px) scale(1.03);
+}
+.equipe-card-img {
+  width: 100%;
+  height: 120px;
+  background: #e5e7eb;
+}
+.equipe-card-body {
+  padding: 18px 16px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.equipe-card-area {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.equipe-card-nome {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+.equipe-card-desc {
+  color: #666;
+  font-size: 1rem;
+}
