@@ -1,0 +1,85 @@
+.valor-section {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  margin-bottom: 64px;
+}
+.valor-info {
+  flex: 1;
+}
+.valor-label {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.valor-title {
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+.valor-desc {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+.valor-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.valor-card {
+  background: #fff;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  padding: 18px 20px;
+  min-width: 320px;
+  max-width: 520px;
+  margin-bottom: 0;
+}
+.valor-card-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.valor-card-desc {
+  color: #444;
+  font-size: 0.98rem;
+}
+.valor-arch-img {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 320px;
+}
+.valor-arch {
+  width: 380px;
+  height: 420px;
+  background: #e5e7eb;
+  border-radius: 180px 180px 0 0;
+  box-shadow: 0 4px 32px #0002;
+  border: 4px solid #d1d5db;
+}
+@media (max-width: 900px) {
+  .valor-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .valor-arch-img {
+    min-width: 0;
+    justify-content: flex-start;
+  }
+  .valor-arch {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+  }
+}
+@media (max-width: 700px) {
+  .valor-title {
+    font-size: 1.3rem;
+  }
+  .valor-desc {
+    font-size: 0.95rem;
+  }
+}

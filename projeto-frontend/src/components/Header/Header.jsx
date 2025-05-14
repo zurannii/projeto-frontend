@@ -1,5 +1,6 @@
 import React from 'react' 
 import './Header.css'
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -8,18 +9,12 @@ const Header = () => {
 
                 <img src="./vercel.svg" alt="logo" width={100} />
 
-                <div className="h-menu">
-                    <a href="#">
-                        Home
-                    </a>
+                <div className="flexCenter h-menu">
+                    <Link href="/">Home</Link>
 
-                    <a href="">
-                        Imóveis
-                    </a>
+                    <Link href="/imoveis">Imóveis</Link>
 
-                    <a href="">
-                        Nosso Valor
-                    </a>
+                    <Link href="/nosso-valor">Nosso Valor</Link>
 
                     <a href="">
                         Consultores
