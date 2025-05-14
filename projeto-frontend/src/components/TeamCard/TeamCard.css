@@ -1,11 +1,13 @@
 .equipe-section {
   margin-top: 48px;
 }
+
 .equipe-label {
   color: #aaa;
   font-size: 1.1rem;
   margin-bottom: 8px;
 }
+
 .equipe-title {
   font-size: 2rem;
   font-weight: 800;
@@ -13,12 +15,14 @@
   margin-bottom: 12px;
   line-height: 1.1;
 }
+
 .equipe-desc {
   color: #444;
   font-size: 1rem;
   margin-bottom: 32px;
   max-width: 480px;
 }
+
 .equipe-slider {
   display: flex;
   gap: 32px;
@@ -26,6 +30,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 .equipe-card {
   background: #fff;
   border-radius: 12px;
@@ -38,31 +43,37 @@
   transition: box-shadow 0.2s;
   border: 1.5px solid #ddd;
 }
+
 .equipe-card-img {
   width: 100%;
   height: 120px;
   background: #e5e7eb;
 }
+
 .equipe-card-body {
   padding: 18px 16px 14px 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .equipe-card-area {
   color: #888;
   font-size: 0.98rem;
   margin-bottom: 2px;
 }
+
 .equipe-card-nome {
   font-weight: 700;
   font-size: 1.05rem;
   margin-bottom: 2px;
 }
+
 .equipe-card-desc {
   color: #666;
   font-size: 0.95rem;
 }
+
 @media (max-width: 700px) {
   .equipe-title {
     font-size: 1.2rem;
