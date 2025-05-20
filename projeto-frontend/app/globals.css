@@ -1,5 +1,5 @@
 :root {
-  --primary: #1f3e72;
+  --primary: #293E40;
   --secondary: rgba(255, 255, 255, 0.78);
   --black: #131110;
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
@@ -9,6 +9,18 @@
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
 
+/* Dark theme overrides */
+body.dark {
+  --primary: #F7FCFC;
+  --secondary: rgba(0, 0, 0, 0.78);
+  --black: #eeeeee;
+  --blue-gradient: linear-gradient(97.05deg, #5d82ff 3.76%, #1a2b60 100%);
+  --orange-gradient: linear-gradient(270deg, #ffc89f 0%, #ff8c00 100%);
+  --blue: #5d82ff;
+  --lightBlue: #2a2a2a;
+  --shadow: 0px 23px 21px -8px rgba(0, 0, 0, 0.25);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +28,12 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -67,7 +85,7 @@ a {
 }
 
 .primaryText {
-  color: #1f3e72;
+  color: var(--primary);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -129,4 +147,15 @@ a {
   .orangeText {
     font-size: 1.2rem;
   }
+}
+
+[data-theme="dark"] {
+  --primary: #eeeeff;
+  --secondary: rgba(0, 0, 0, 0.78);
+  --black: #ffffff;
+  --blue-gradient: linear-gradient(97.05deg, #243a7d 3.76%, #1b2a5a 100%);
+  --orange-gradient: linear-gradient(270deg, #ff922d 0%, #ffb978 100%);
+  --blue: #243a7d;
+  --lightBlue: #1b1b2f;
+  --shadow: 0px 23px 21px -8px rgba(0, 0, 0, 0.3);
 }

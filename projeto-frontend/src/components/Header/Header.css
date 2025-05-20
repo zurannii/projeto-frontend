@@ -1,12 +1,14 @@
 .h-wrapper {
-    background-color: var(--black);
+    background-color: var(--primary);
+    height: 121px;
     color: white;
+    
 }
 
 .h-container {
     justify-content: space-between;
-    padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     color: var(--secondary);
 }
 
