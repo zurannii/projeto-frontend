@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import './OurValue.css'; // Import the dedicated Valor CSS file
+import './OurValue.css'; 
 
 const valores = [
   {
