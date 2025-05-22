@@ -1,25 +1,162 @@
+/* Hero Section Styles */
 .hero-wrapper {
-    color: white;
-    position: relative;
-    padding-bottom: 2rem;
-    background-color: var(--black);
+  width: 100%;
+  /* Background image and overlay */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/path/to/your/house-image.jpg'); /* Replace with actual path */
+  background-size: cover;
+  background-position: center;
+  padding: 64px 0; /* Keep padding or adjust */
+  color: white; /* Set default text color to white */
+}
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Start with column layout for mobile */
+  gap: 40px;
+  align-items: flex-start; /* Align items to the start (left) */
+  justify-content: space-between;
+}
+@media (min-width: 900px) {
+  .hero-container {
+    flex-direction: row; /* Row layout for larger screens */
+    gap: 60px;
+    align-items: flex-start; /* Align items to the top in row layout */
+  }
+}
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text items to the start (left) */
+  min-width: 320px; /* Keep min-width */
+}
+.hero-title {
+  font-size: 3rem; /* Adjusted size based on Figma visual */
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px; /* Adjusted margin */
+  line-height: 1.2; /* Adjusted line height */
+  text-shadow: none; /* Removed text shadow */
+}
+.hero-desc {
+  color: rgba(255, 255, 255, 0.8); /* Adjusted color for readability on dark background */
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+/* Remove .hero-image and .hero-arch styles */
+
+/* Substitua a parte atual da .hero-search e .search-button por isso: */
+
+.hero-search {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 32px;
+  border: 1px solid #E7FFF0;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center; /* Já está OK, mas confira se todos os filhos têm altura consistente */
+  padding: 5px 10px;
 }
 
-.hero-container{
-    justify-content: space-between;
-    align-items: flex-end;
+.hero-search input {
+  flex: 2;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  color: white;
 }
 
-/* lado direito */
-.image-container{
-    width: 30rem;
-    height: 35rem;
-    overflow: hidden;
-    border-radius: 15rem 15rem 0 0;
-    border: 8px solid rgba(255, 255, 255, 0.12)
+.hero-search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.image-container>img{
-    width: 100%;
-    height: 100%;
+.location-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.location-icon {
+  color: 769080; /* mesma cor esverdeada */
+  font-size: 24px;
+}
+
+
+/* Envolva o botão numa div opcional se quiser controlar melhor o espaço (opcional) */
+.search-button {
+  padding: 6px 12px;
+  min-width: 90px; /* Garante espaço para "Busque Aqui" */
+  white-space: nowrap; /* 👈 Impede quebra de linha */
+  background-color: #769080;
+  color: white;
+  border: 1px solid #769080;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+
+.search-button:hover {
+  background-color: rgba(139, 160, 139, 0.8);
+  color: #eee;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px; /* Adjusted gap */
+  margin-top: 24px; /* Adjusted margin */
+  align-items: flex-start; /* Align stats to the top */
+}
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align stat text to the left */
+}
+.hero-stat-number {
+  font-size: 2.5rem; /* Adjusted size */
+  font-weight: 700;
+  color: white; /* Set color to white */
+}
+.hero-stat-label {
+  color: rgba(255, 255, 255, 0.8); /* Adjusted color */
+  font-size: 1rem; /* Adjusted size */
+  margin-top: 4px; /* Adjusted margin */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem; /* Adjusted size for smaller screens */
+    }
+    .hero-desc {
+        font-size: 1rem;
+    }
+    .hero-search {
+        max-width: 100%; /* Allow search to take full width */
+    }
+    .hero-stats {
+        flex-direction: column; /* Stack stats vertically */
+        gap: 16px;
+        align-items: flex-start; /* Align stats to the left */
+    }
+     .hero-stat {
+        align-items: flex-start; /* Align individual stats to the left */
+     }
 }
