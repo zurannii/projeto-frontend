@@ -12,7 +12,7 @@ const equipe = [
   {
     nome: 'Jansen Okasaki',
     area: 'área',
-    desc: 'Lorem ipsum dolor sit amet. Et explicabo enim in galsium tempore',
+    desc: 'FrontEnd',
     image: ''
   },
   {
