@@ -6,7 +6,7 @@ const equipe = [
   {
     nome: 'Beatriz Suelen',
     area: 'área',
-    desc: 'Lorem ipsum dolor sit amet. Et explicabo enim in galsium tempore',
+    desc: 'FullStack',
     image: ''
   },
   {
