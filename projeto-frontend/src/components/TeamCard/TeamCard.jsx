@@ -5,14 +5,14 @@ import './TeamCard.css'; // Import the new equipe.css file
 const equipe = [
   {
     nome: 'Beatriz Suelen',
-    area: 'área',
-    desc: 'FullStack',
+    area: 'Área - FullStack',
+    desc: 'Estudante do curso de Sistemas para Internet, formada em Publicidade em um curso Técnico de Jogos Digitais.',
     image: ''
   },
   {
     nome: 'Jansen Okasaki',
-    area: 'área',
-    desc: 'FrontEnd',
+    area: 'Área - FrontEnd',
+    desc: 'Estudante do curso de Sistemas para Internet e amante da tecnologia.',
     image: ''
   },
   {
