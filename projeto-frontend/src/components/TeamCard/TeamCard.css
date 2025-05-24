@@ -104,20 +104,27 @@
 
 .equipe-card-img {
   width: 100%;
-  height: 160px;
-  background: #b2c8b2;
+  height: 160px; /* altura fixa da área de imagem */
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  background: #b2c8b2;
+}
+
+.equipe-card-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem se encaixe */
 }
 
 .equipe-card-img-placeholder {
   width: 100px;
   height: 100px;
-  background: #ccc;
   border-radius: 50%;
+  background-color: #ccc;
 }
+
 
 .equipe-card-body {
   padding: 18px 16px 14px 16px;
@@ -143,13 +150,6 @@
   font-size: 0.9rem;
 }
 
-.equipe-card-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-}
 
 @media (max-width: 700px) {
   .equipe-desc {

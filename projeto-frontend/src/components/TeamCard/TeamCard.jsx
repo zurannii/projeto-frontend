@@ -6,8 +6,8 @@ const equipe = [
   {
     nome: 'Beatriz Costa',
     area: 'Área - Full-Stack',
-    desc: 'Estudante do curso de Sistemas para Internet, formada em Publicidade e curso Técnico em Jogos Digitais.',
-    image: '/images/beatriz.jpeg'
+    desc: 'Estudante de Sistemas para Internet, Publicitária e Técnica em Jogos Digitais.',
+    image: '/assets/beatriz.jpeg'
   },
   {
     nome: 'Jansen Okasaki',
