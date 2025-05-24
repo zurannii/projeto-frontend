@@ -4,7 +4,6 @@
   --black: #131110;
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue: #4066ff;
   --lightBlue: #eeeeff;
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
@@ -16,7 +15,6 @@ body.dark {
   --black: #eeeeee;
   --blue-gradient: linear-gradient(97.05deg, #5d82ff 3.76%, #1a2b60 100%);
   --orange-gradient: linear-gradient(270deg, #ffc89f 0%, #ff8c00 100%);
-  --blue: #5d82ff;
   --lightBlue: #2a2a2a;
   --shadow: 0px 23px 21px -8px rgba(0, 0, 0, 0.25);
 }
@@ -31,7 +29,7 @@ body.dark {
 
 body {
   background-color: var(--background);
-  color: var(--text);
+  color: #FCFFFD;
 }
 
 a {
@@ -85,7 +83,7 @@ a {
 }
 
 .primaryText {
-  color: var(--primary);
+  color: #FCFFFD;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -94,11 +92,7 @@ a {
   color: rgb(140 139 139);
   font-size: 0.9rem;
 }
-.orangeText {
-  color: orange;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
+
 
 .button{
   font-weight: 500;
@@ -115,10 +109,6 @@ a {
   transform: scale(1.1);
 
 }
-
-
-
-
 
 /* media queries */
 @media (min-width: 1536px) {

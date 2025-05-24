@@ -4,15 +4,15 @@ import './TeamCard.css'; // Import the new equipe.css file
 
 const equipe = [
   {
-    nome: 'Beatriz Suelen',
-    area: 'área',
-    desc: 'Lorem ipsum dolor sit amet. Et explicabo enim in galsium tempore',
-    image: ''
+    nome: 'Beatriz Costa',
+    area: 'Área - Full-Stack',
+    desc: 'Estudante de Sistemas para Internet, Publicitária e Técnica em Jogos Digitais.',
+    image: '/assets/beatriz.jpeg'
   },
   {
     nome: 'Jansen Okasaki',
-    area: 'área',
-    desc: 'Lorem ipsum dolor sit amet. Et explicabo enim in galsium tempore',
+    area: 'Área - FrontEnd',
+    desc: 'Estudante do curso de Sistemas para Internet e amante da tecnologia.',
     image: ''
   },
   {
@@ -33,9 +33,13 @@ function EquipeCard({ nome, area, desc, image }) {
   return (
     <div className="equipe-card">
       <div className="equipe-card-img">
-        {/* Placeholder for circular image */} 
+        {image ? (
+          <img src={image} alt={nome} className="equipe-card-avatar" />
+        ) : (
         <div className="equipe-card-img-placeholder"></div>
+        )}
       </div>
+
       <div className="equipe-card-body">
         <div className="equipe-card-area">{area}</div>
         <div className="equipe-card-nome">{nome}</div>
@@ -67,7 +71,7 @@ export default function EquipeSection() {
     <section className="equipe-section">
       <div className="equipe-label">Nossa Equipe</div>
       <h2 className="equipe-title">Nossos Desenvolvedores</h2>
-      <p className="equipe-desc">Lorem ipsum dolor sit amet. Hic ducimus deserunt eum nulla consectetur eos delectus harum. Et nesciunt molestias eum maxime laboriosam et molestias illum sit nisi sint est perferendis sint ut possimus eligendi.</p>
+      <p className="equipe-desc">Somos o time de desenvolvedores responsáveis por tornar este projeto realidade. Trabalhamos com foco em qualidade, usabilidade e performance, combinando boas práticas de desenvolvimento com criatividade, sustentabilidade e dedicação. Tudo foi desenvolvido com atenção aos detalhes, pensando em oferecer a melhor experiência para você.</p>
       <div className="equipe-slider-container">
         <button 
           className="equipe-slider-arrow prev"

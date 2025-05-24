@@ -4,16 +4,16 @@ import './OurValue.css';
 
 const valores = [
   {
-    title: 'Aliva Priva Jardim',
-    desc: 'Lorem ipsum dolor sit amet. Hic ducimus deserunt eum nulla consectetur eos delectus harum. Et nesciunt molestias eum maxime laboriosam et molestias illum sit nisi sint est perferendis sint ut possimus eligendi.'
+    title: 'Casas que respeitam você e o meio ambiente',
+    desc: 'A responsabilidade social e ambiental é um dos pilares que orientam as ações da nossa imobiliária. Nós nos comprometemos a desenvolver e oferecer empreendimentos que respeitem o meio ambiente e promovam o bem-estar das comunidades onde atuamos.'
   },
   {
-    title: 'Aliva Priva Jardim', 
-    desc: 'Lorem ipsum dolor sit amet. Hic ducimus deserunt eum nulla consectetur eos delectus harum. Et nesciunt molestias eum maxime laboriosam et molestias illum sit nisi sint est perferendis sint ut possimus eligendi.'
+    title: 'Cada lar pensado com empatia e responsabilidade', 
+    desc: 'Nossos lares são mais do que estruturas: são um espaço de cuidado, acolhimento e propósito. Por isso, projetamos cada imóvel com empatia, respeitando as necessidades das pessoas e promovendo bem-estar, com responsabilidade ambiental e social.'
   },
   {
-    title: 'Aliva Priva Jardim', 
-    desc: 'Lorem ipsum dolor sit amet. Hic ducimus deserunt eum nulla consectetur eos delectus harum. Et nesciunt molestias eum maxime laboriosam et molestias illum sit nisi sint est perferendis sint ut possimus eligendi.'
+    title: 'Sustentável no presente, inteligente para o futuro', 
+    desc: 'Nossos projetos unem soluções ecológicas com inovação. Utilizamos materiais conscientes, tecnologias eficientes e práticas que reduzem o impacto ambiental hoje, enquanto preparamos cada espaço para as necessidades do amanhã.'
   },
 ];
 
@@ -40,7 +40,7 @@ export default function ValorSection() {
       <div className="valor-info">
         <div className="valor-label">Nosso Valor</div>
         <h1 className="primaryText valor-title">O que nos torna únicos?</h1>
-        <p className="valor-desc">Lorem ipsum dolor sit amet. Hic ducimus deserunt eum nulla consectetur eos delectus harum. Et nesciunt molestias eum maxime laboriosam et molestias illum sit nisi sint est perferendis sint ut possimus eligendi.</p>
+        <p className="valor-desc">A habitação sustentável envolve práticas de construção que utilizam materiais ecológicos, promovem a eficiência energética, e gerenciam de forma responsável o uso de recursos como água e energia. Nossos imóveis são projetados para reduzir o impacto ambiental, proporcionando uma maior qualidade de vida aos moradores e uma menor pegada ecológica.</p>
         <div className="valor-cards">
           {valores.map((v, idx) => (
             <ValorCard 

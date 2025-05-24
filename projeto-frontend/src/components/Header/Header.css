@@ -1,15 +1,18 @@
 .h-wrapper {
-    background-color: var(--primary);
-    height: 121px;
-    color: white;
-    
+    background-color: var(--primary); /* Cor de fundo específica do header */
+    height: 121px; /* Altura específica do header */
+    color: #F7FCFC; /* Cor do texto padrão dentro do header */
+    position: relative; /* Necessário para posicionamento absoluto do menu mobile */
+    z-index: 99; /* Garante que o header fique sobre outros elementos */
+    /* Propriedades como width e padding são tratadas por .innerWidth e .paddings no JSX */
 }
 
 .h-container {
-    justify-content: space-between;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    color: var(--secondary);
+    justify-content: space-between; /* Espaçamento específico entre logo e menu, dentro do flex container (.flexCenter) */
+    padding-bottom: 1rem; /* Padding vertical específico do container interno */
+    padding-top: 1rem; /* Padding vertical específico do container interno */
+    color: var(--secondary); /* Cor padrão para elementos dentro do container que não são brancos (links inativos) */
+    /* Propriedades de layout flex (display, align-items, etc.) e box model (max-width, margin) são tratadas por .flexCenter e .innerWidth no JSX */
 }
 
 .h-menu{
@@ -27,10 +30,157 @@
     color: var(--secondary);
 }
 
-.h-menu{
-    gap: 2rem;
+/* .h-logo não precisa de estilos de layout se o pai (.h-container com flexCenter) já os gerencia */
+.h-logo img {
+    height: 60px; /* Altura específica da imagem do logo */
 }
 
-.h-menu>*:hover{
-    cursor:pointer;
+.h-menu {
+    gap: 2rem; /* Espaçamento específico entre os itens do menu */
+    /* Propriedades de layout flex (display, align-items, flex-wrap) são tratadas por .flexCenter no JSX */
+}
+
+.h-menu > *:hover {
+    cursor: pointer; /* Cursor para indicar interatividade, mais específico que *:hover global */
+}
+
+.h-menu a {
+    color: #F7FCFC;
+    position: relative; /* Pode ser necessário para efeitos mais avançados ou underline customizado */
+    padding-bottom: 4px; /* Espaço entre o texto e a parte de baixo (útil para o underline) */
+    transition: text-decoration 0.3s ease, color 0.3s ease; /* Transição suave para os efeitos de underline e cor */
+    /* Propriedades como color (padrão é herdado de .h-container), text-decoration (none globalmente), font-size e font-weight devem vir de estilos globais ou herança, a menos que sejam específicas do menu */
+}
+
+/* Underline no hover, apenas se NÃO for o link ativo */
+.h-menu a:hover:not(.active) {
+    text-decoration: underline; /* Adiciona o underline no hover */
+    text-underline-offset: 6px; /* Distância do underline no hover */
+    text-decoration-thickness: 2px; /* Espessura do underline no hover */
+    color: #F7FCFC; /* Cor do texto no hover (quando não ativo) */
+}
+
+/* Estilo do link ativo */
+.h-menu a.active {
+    text-underline-offset: 6px; /* Distância do underline no estado ativo */
+    text-decoration: underline; /* Adiciona o underline no estado ativo */
+    text-decoration-thickness: 2px; /* Espessura do underline no estado ativo */
+    color: #D1EBDB; /* Cor do texto no estado ativo */
+}
+
+.h-user-icon {
+    width: 40px; /* Tamanho específico do ícone */
+    height: 40px; /* Tamanho específico do ícone */
+    margin-left: 16px; /* Espaçamento à esquerda do ícone */
+    color: #D1EBDB;; /* Cor do ícone */
+    font-size: 1.5rem; /* Tamanho visual do ícone */
+    transition: color 0.2s ease-in-out; /* Transição suave para a cor no hover */
+    /* Propriedades de layout flex (display, align-items, justify-content) devem vir do pai (.h-menu com flexCenter) */
+}
+
+.h-user-icon:hover {
+    color: #F7FCFC; /* Cor do ícone no hover */
+    /* cursor: pointer já coberto por .h-menu>*:hover */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 700px) {
+    .h-menu {
+        /* Posicionamento e layout do menu mobile (sobrescrevendo flexCenter) */
+        position: absolute; /* Posicionamento absoluto */
+        top: 121px; /* Posiciona abaixo do header */
+        right: 0; /* Alinha à direita */
+        background-color: var(--primary); /* Cor de fundo do menu mobile */
+        flex-direction: column; /* Empilha itens verticalmente */
+        padding: 16px; /* Padding interno do menu mobile */
+        display: none; /* Oculta por padrão */
+    }
+    .h-menu.open {
+        display: flex; /* Mostra quando a classe 'open' está presente (controlada com JS/React) */
+    }
+    .h-logo img {
+        width: 80px; /* Ajuste de tamanho do logo em telas menores */
+    }
+    /* Outros ajustes responsivos para .h-container, .h-menu a, etc., se necessário, mas o básico de layout vem dos utilitários e do menu mobile posicionado */
+}
+
+.h-container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+
+/* .h-logo não precisa de estilos de layout se o pai (.h-container com flexCenter) já os gerencia */
+.h-logo img {
+    height: 60px; /* Altura específica da imagem do logo */
+}
+
+.h-menu {
+    gap: 2rem; /* Espaçamento específico entre os itens do menu */
+    /* Propriedades de layout flex (display, align-items, flex-wrap) são tratadas por .flexCenter no JSX */
+}
+
+.h-menu > *:hover {
+    cursor: pointer; /* Cursor para indicar interatividade, mais específico que *:hover global */
+}
+
+.h-menu a {
+    color: #F7FCFC;
+    position: relative; /* Pode ser necessário para efeitos mais avançados ou underline customizado */
+    padding-bottom: 4px; /* Espaço entre o texto e a parte de baixo (útil para o underline) */
+    transition: text-decoration 0.3s ease, color 0.3s ease; /* Transição suave para os efeitos de underline e cor */
+    /* Propriedades como color (padrão é herdado de .h-container), text-decoration (none globalmente), font-size e font-weight devem vir de estilos globais ou herança, a menos que sejam específicas do menu */
+}
+
+/* Underline no hover, apenas se NÃO for o link ativo */
+.h-menu a:hover:not(.active) {
+    text-decoration: underline; /* Adiciona o underline no hover */
+    text-underline-offset: 6px; /* Distância do underline no hover */
+    text-decoration-thickness: 2px; /* Espessura do underline no hover */
+    color: #F7FCFC; /* Cor do texto no hover (quando não ativo) */
+}
+
+/* Estilo do link ativo */
+.h-menu a.active {
+    text-underline-offset: 6px; /* Distância do underline no estado ativo */
+    text-decoration: underline; /* Adiciona o underline no estado ativo */
+    text-decoration-thickness: 2px; /* Espessura do underline no estado ativo */
+    color: #D1EBDB; /* Cor do texto no estado ativo */
+}
+
+.h-user-icon {
+    width: 40px; /* Tamanho específico do ícone */
+    height: 40px; /* Tamanho específico do ícone */
+    margin-left: 16px; /* Espaçamento à esquerda do ícone */
+    color: #D1EBDB;; /* Cor do ícone */
+    font-size: 1.5rem; /* Tamanho visual do ícone */
+    transition: color 0.2s ease-in-out; /* Transição suave para a cor no hover */
+    /* Propriedades de layout flex (display, align-items, justify-content) devem vir do pai (.h-menu com flexCenter) */
+}
+
+.h-user-icon:hover {
+    color: #F7FCFC; /* Cor do ícone no hover */
+    /* cursor: pointer já coberto por .h-menu>*:hover */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 700px) {
+    .h-menu {
+        /* Posicionamento e layout do menu mobile (sobrescrevendo flexCenter) */
+        position: absolute; /* Posicionamento absoluto */
+        top: 121px; /* Posiciona abaixo do header */
+        right: 0; /* Alinha à direita */
+        background-color: var(--primary); /* Cor de fundo do menu mobile */
+        flex-direction: column; /* Empilha itens verticalmente */
+        padding: 16px; /* Padding interno do menu mobile */
+        display: none; /* Oculta por padrão */
+    }
+    .h-menu.open {
+        display: flex; /* Mostra quando a classe 'open' está presente (controlada com JS/React) */
+    }
+    .h-logo img {
+        width: 80px; /* Ajuste de tamanho do logo em telas menores */
+    }
+    /* Outros ajustes responsivos para .h-container, .h-menu a, etc., se necessário, mas o básico de layout vem dos utilitários e do menu mobile posicionado */
 }
