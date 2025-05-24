@@ -143,6 +143,14 @@
   font-size: 0.9rem;
 }
 
+.equipe-card-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 700px) {
   .equipe-desc {
     font-size: 0.95rem;

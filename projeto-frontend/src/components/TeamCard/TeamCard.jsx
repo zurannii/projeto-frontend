@@ -4,10 +4,10 @@ import './TeamCard.css'; // Import the new equipe.css file
 
 const equipe = [
   {
-    nome: 'Beatriz Suelen',
-    area: 'Área - FullStack',
-    desc: 'Estudante do curso de Sistemas para Internet, formada em Publicidade em um curso Técnico de Jogos Digitais.',
-    image: ''
+    nome: 'Beatriz Costa',
+    area: 'Área - Full-Stack',
+    desc: 'Estudante do curso de Sistemas para Internet, formada em Publicidade e curso Técnico em Jogos Digitais.',
+    image: '/images/beatriz.jpeg'
   },
   {
     nome: 'Jansen Okasaki',
@@ -33,9 +33,13 @@ function EquipeCard({ nome, area, desc, image }) {
   return (
     <div className="equipe-card">
       <div className="equipe-card-img">
-        {/* Placeholder for circular image */} 
+        {image ? (
+          <img src={image} alt={nome} className="equipe-card-avatar" />
+        ) : (
         <div className="equipe-card-img-placeholder"></div>
+        )}
       </div>
+
       <div className="equipe-card-body">
         <div className="equipe-card-area">{area}</div>
         <div className="equipe-card-nome">{nome}</div>
