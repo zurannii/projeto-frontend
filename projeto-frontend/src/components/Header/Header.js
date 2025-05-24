@@ -3,7 +3,7 @@
 import React from 'react' 
 import './Header.css'
 import Link from 'next/link';
-import { HiOutlineUser } from "react-icons/hi";
+import { LiaUserCircle } from "react-icons/lia";
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
                     <a href="">Consultores</a>
 
                     <div className="h-user-icon">
-                      <HiOutlineUser size={24} />
+                      <LiaUserCircle size={40} />
                     </div>
                 </div>
             </div>
