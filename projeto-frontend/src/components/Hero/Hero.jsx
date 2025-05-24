@@ -51,52 +51,34 @@ const AnimatedNumber = ({ finalNumber }) => {
 };
 
 const Hero = () => {
-  return (
-    <section className="hero-wrapper">
-      <div className="hero-container">
-        {/* Texto à esquerda */}
-        <div className="hero-text">
-          <h1 className="hero-title">
-            Moradias sustentáveis e <br />
-            acessíveis que mudam <br />
-            vidas.
-          </h1>
-          <p className="hero-desc">
-            Possuímos uma proposta de imobiliária focada em habitação sustentável e acessível que busca atender a demanda crescente por imóveis que não só respeitem o meio ambiente, mas também sejam viáveis para diferentes camadas sociais.
-          </p>
-          {/* Campo de busca */}
-          <div className="hero-search">
-            {/* Icone de Localização - Adicionar manualmente ou com biblioteca de icones */}
-            <div className="location-box">
-              <FaMapMarkerAlt size={32} color="#769080" />
+    return (
+        <section className="hero-wrapper">
+            <div className="paddings innerWidth hero-container flexCenter hero-container">
+                 {/* lado esquerdo*/}
+                <div className="flexColStart hero-left">
+                    <div className="hero-title">
+                        <h1>Descubra <br/>
+                        O Imóvel mais <br/> Adequado
+                        </h1>
+                    </div>
+                    <div className=" flexColStart hero-des">
+                        <span>Encontre uma variedade de imóveis que conbinam com você</span>
+                        <span>Esqueça todas as dificuldades de encontrar um imóvel para você</span>
+                    </div>
+                    <div className="search-bar">
+                        barra de pesquisa
+                    </div>
+                </div>
+                {/* lado direito*/}
+                <div className="flexCenter hero-right">
+                    <div className="image-container">
+                        <img src="./vercel.svg" alt="hero" />
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <input
-              type="text"
-              placeholder="Digite a localização"
-            />
-            <div>
-            <button className="search-button">Busque Aqui</button>
-            </div>
-
-          </div>
-          {/* Estatísticas */}
-          <div className="hero-stats">
-            {heroStats.map((stat, index) => (
-              <div className="hero-stat" key={index}>
-                <span className="hero-stat-number">
-                   <AnimatedNumber finalNumber={stat.number} /> {/* Use AnimatedNumber component */}
-                </span>
-                <span className="hero-stat-label">{stat.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* Imagem à direita - Removida e usada como background */} 
-        {/* <div className="hero-image"></div> */} 
-      </div>
-    </section>
-  );
-};
+    )
+}
 
 export default Hero;

@@ -117,45 +117,21 @@
   color: #eee;
 }
 
-.hero-stats {
-  display: flex;
-  gap: 40px; /* Adjusted gap */
-  margin-top: 24px; /* Adjusted margin */
-  align-items: flex-start; /* Align stats to the top */
-}
-.hero-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align stat text to the left */
-}
-.hero-stat-number {
-  font-size: 2.5rem; /* Adjusted size */
-  font-weight: 700;
-  color: white; /* Set color to white */
-}
-.hero-stat-label {
-  color: rgba(255, 255, 255, 0.8); /* Adjusted color */
-  font-size: 1rem; /* Adjusted size */
-  margin-top: 4px; /* Adjusted margin */
+.hero-container{
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.2rem; /* Adjusted size for smaller screens */
-    }
-    .hero-desc {
-        font-size: 1rem;
-    }
-    .hero-search {
-        max-width: 100%; /* Allow search to take full width */
-    }
-    .hero-stats {
-        flex-direction: column; /* Stack stats vertically */
-        gap: 16px;
-        align-items: flex-start; /* Align stats to the left */
-    }
-     .hero-stat {
-        align-items: flex-start; /* Align individual stats to the left */
-     }
+/* lado direito */
+.image-container{
+    width: 30rem;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+    border: 8px solid rgba(255, 255, 255, 0.12)
+}
+
+.image-container>img{
+    width: 100%;
+    height: 100%;
 }
