@@ -1,53 +1,46 @@
-/* Styles for the individual Residence Card component */
 .residence-card {
-  background-color: #fff; /* White background for cards */
-  border: 1px solid #ddd; /* Card border */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Hide parts of the image outside the border-radius */
-  width: 326px; /* Ajustado para a largura do Figma */
-  height: 360px; /* Ajustado para a altura total do Figma */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #FCFFFD; 
+  border: 1px solid #93BCBF; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  width: 326px; 
+  height: 360px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   display: flex;
-  flex-direction: column; /* Stack image and info vertically */
-  transition: transform 0.3s ease-in-out; /* Transição suave para o efeito hover */
+  flex-direction: column; 
+  transition: transform 0.3s ease-in-out; 
 }
 
 .residence-card:hover {
-  transform: translateY(-10px); /* Eleva o card 10px ao passar o mouse */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para reforçar o efeito */
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .card-image {
-  width: 100%; /* Image takes full width of the card */
-  height: 200px; /* Mantém a altura da imagem, ajuste se necessário */
-  object-fit: cover; /* Cover the area without distorting aspect ratio */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .card-info {
-  padding: 1rem; /* Padding inside the card below the image */
+  padding: 1rem; 
   display: flex;
-  line-height: 0.5rem;
+  line-height: 1rem;
   flex-direction: column;
-  gap: 0.5rem; /* Space between elements in card info */
-  flex: 1; /* Permite que o card-info ocupe o espaço restante */
-  overflow: hidden; /* Evita que o conteúdo exceda o espaço */
+  gap: 0.2rem; 
+  flex: 1; 
+  overflow: hidden; 
 }
 
 .card-price {
   font-size: 1.1rem;
-  font-weight: 700;
-  color: #5B7C65; /* Example color */
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1B3A2F; /* Example color */
+  font-weight: semibold;
+  color: #5B7C65; 
 }
 
 .card-description {
   font-size: 0.9rem;
-  color: #666; /* Example color */
+  color: #293E40; /* Example color */
   line-height: 1.4;
   overflow: hidden; /* Evita que o texto exceda o espaço */
   text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */

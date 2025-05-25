@@ -205,12 +205,12 @@
 
 .option-card {
   background: #fff; 
-  border: 1px solid #ddd;
+  border: 1px solid #65898C;;
   border-radius: 6px; 
   padding: 12px 20px; 
   text-align: left; 
   font-weight: 600; 
-  color: #333; 
+  color: var(--primary); 
   cursor: pointer;
   transition: background 0.2s ease, border-color 0.2s ease; /* Adjusted transition */
   box-shadow: none; 
