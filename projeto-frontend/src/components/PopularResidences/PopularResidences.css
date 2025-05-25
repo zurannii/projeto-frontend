@@ -1,0 +1,98 @@
+/* Estilos para a seção Residências Populares */
+.popular-residences-section {
+  padding: 2rem;
+  margin-top: 45rem; /* Mantém o margin para alinhamento com a seção Hero */
+  position: relative;
+  z-index: 1;
+}
+
+.popular-residences-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Espaçamento horizontal */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espaço entre o título e o container de cards */
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  margin: 0 auto;
+  padding: 130px 60px 0px 85px; 
+
+}
+.popular-residences-header {
+  text-align: left;
+}
+
+.popular-residences-header .subtitle {
+  font-size: 1rem;
+  color: #507073; 
+  font-weight: normal;
+}
+
+.popular-residences-header .title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--primary);/* Cor do título baseada na imagem */
+}
+
+.residences-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Estilos para os cards (assumindo que estão em ResidenceCard.css) */
+.residence-card {
+  width: 300px; /* Largura aproximada baseada na imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.residence-card:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Ajuste conforme altura da imagem no Figma */
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1B3A2F; /* Cor do preço */
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333; /* Cor do título do card */
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #666666; /* Cor da descrição */
+  line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+  .residences-cards-container {
+    gap: 1rem;
+  }
+
+  .residence-card {
+    width: 100%; /* Cards ocupam 100% em telas menores */
+    max-width: 300px; /* Limite máximo */
+  }
+}
