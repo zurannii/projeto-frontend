@@ -64,8 +64,9 @@
 }
 
 .valor-arch-img {
-  width: 517px; /* Example size, adjust as needed */
-  height: 693px; /* Example size, adjust as needed */
+  width: 400px; /* Example size, adjust as needed */
+  height: 580px; /* Example size, adjust as needed */
+  margin-top: 20px;
   background-image: url('/assets/valorimg.png'); /* Path to the house image */
   background-position: left;
   background-size: cover;
@@ -75,17 +76,6 @@
   border-bottom-right-radius: 0;
   overflow: hidden; 
   flex-shrink: 0; /* Prevent shrinking on larger screens */
-}
-
-.valor-arch {
-  width: 380px; /* Keep width */
-  height: 420px; /* Keep height */
-  background: #e5e7eb; /* Placeholder color */
-  /* Keep current border-radius attempt for oval */
-  border-radius: 50% 50% 0 0 / 50% 50% 0 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Keep adjusted shadow */
-  border: none; /* No border */
-  overflow: hidden; /* Ensure content stays within oval */
 }
 
 .valor-card.open {

@@ -54,7 +54,6 @@ export default function ValorSection() {
         </div>
       </div>
       <div className="valor-arch-img">
-        <img src={valorimg} alt="Imagem ilustrativa" className="valor-image" />
         <div className="valor-arch" />
       </div>
     </section>
