@@ -1,6 +1,6 @@
 import Header from '@/components/Header/Header';
 import { FaSearch } from 'react-icons/fa';
-/*import ResidenceCard from '@/components/ResidenceCard';*/
+import ResidenceCard from '@/components/ResidenceCard';
 import './imoveis.css';
 
 const residences = [
@@ -57,11 +57,11 @@ export default function ImoveisPage() {
             <span className="imoveis-filter-icon"><FaSearch /></span>
           </div>
         </div>
-        {/*<div className="imoveis-grid">
+        <div className="imoveis-grid">
           {residences.map((res, idx) => (
-           /* <ResidenceCard key={idx} {...res} />
+           <ResidenceCard key={idx} {...res} />
           ))}
-        </div>*/}
+        </div>
       </main>
     </div>
   );

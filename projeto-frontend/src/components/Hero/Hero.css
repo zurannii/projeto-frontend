@@ -113,7 +113,7 @@
 
 .hero-stats {
   display: flex;
-  gap: 40px; 
+  gap: 10px; 
   margin-top: 80px; 
   align-items: flex-start; 
 }
@@ -134,30 +134,33 @@
 }
 .hero-container.new-section {
   display: flex;
-  justify-content: center;
+  flex-direction: row; 
+  justify-content: space-between; 
   align-items: flex-start;
   gap: 3rem;
-  padding: 4rem 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
+  padding: 12rem 2rem;
+
 }
+
 
 /* IMAGEM ARREDONDADA À ESQUERDA */
 .hero-left-image {
-  width: 350px;
-  height: 450px;
-  background-image: url('/assets/casa.jpg'); /* coloque o caminho correto */
+  width: 517px; /* Example size, adjust as needed */
+  height: 693px; /* Example size, adjust as needed */
+  background-image: url('/assets/casa-hero-2.png'); /* Path to the house image */
+  background-position: left;
   background-size: cover;
-  background-position: center;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  overflow: hidden;
+  overflow: hidden; 
+  flex-shrink: 0; /* Prevent shrinking on larger screens */
 }
-
 /* CONTEÚDO DE TEXTO E CARDS */
 .hero-right-content {
-  width: 500px;
+  width: 50%; /* Give it a percentage width */
   display: flex;
   flex-direction: column;
 }
@@ -167,7 +170,7 @@
   color: #507073;
   font-weight: 400;
   margin-bottom: 0px;
-  padding: 200px 0px 0px 50px;
+  padding: 110px 0px 0px 50px;
 }
 
 .hero-title.second-section {
@@ -194,24 +197,24 @@
 .hero-options-cards {
   display: flex;
   flex-direction: column;
-  gap: 12px; /* Matched gap from valor-cards */
+  gap: 12px;
+  padding: 0px 0px 0px 50px;
+  border: #65898C;
+
 }
 
 .option-card {
-  background: #fff; /* Matched background from valor-card */
-  border: 1px solid #ddd; /* Matched border from valor-card */
-  border-radius: 6px; /* Matched border-radius from valor-card */
-  padding: 12px 20px; /* Matched padding from valor-card */
-  /* min-width and max-width might need adjustment based on overall layout */
-  /* min-width: 300px; */
-  /* max-width: 480px; */
-  text-align: left; /* Keep text aligned left for readability in a column */
-  font-weight: 600; /* Matched font-weight from valor-card */
-  color: #333; /* Matched color from valor-card */
+  background: #fff; 
+  border: 1px solid #65898C;;
+  border-radius: 6px; 
+  padding: 12px 20px; 
+  text-align: left; 
+  font-weight: 600; 
+  color: var(--primary); 
   cursor: pointer;
   transition: background 0.2s ease, border-color 0.2s ease; /* Adjusted transition */
-  box-shadow: none; /* Matched box-shadow from valor-card */
-  width: 100%; /* Keep width 100% to fit the container */
+  box-shadow: none; 
+  width: 100%; 
 }
 
 .option-card:hover {
@@ -220,24 +223,25 @@
 }
 
 .option-card h2 {
-  font-weight: 600; /* Matched font-weight from valor-card-title */
-  font-size: 1rem; /* Matched font-size from valor-card-title */
-  color: #1B3A2F; /* Keep original color or match a specific valor color if needed */
-  margin-bottom: 0; /* Remove margin-bottom to control spacing with description via description's margin-top */
+  font-weight: 600; 
+  font-size: 1rem; 
+  text-align: center;
+  color: var(--primary); 
+  margin-bottom: 0; 
   transition: color 0.3s ease-in-out; /* Keep transition */
 }
 
-/* Removed .option-card.open h2 color change based on valor-card styles */
-
 .option-card p {
-  font-size: 0.95rem; /* Matched font-size from valor-card-description */
-  color: #555; /* Matched color from valor-card-description */
-  text-align: left; /* Matched text-align from valor-card-description */
-  margin-top: 12px; /* Matched margin-top from valor-card-description */
-  max-height: 0; /* Keep hidden by default for expandable behavior */
-  overflow: hidden; /* Keep hidden for expandable behavior */
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Keep transition for expansion */
-  opacity: 0; /* Start with opacity 0 for expandable behavior */
+  font-size: 0.8rem; 
+  color: var(--primary); 
+  text-align: center; 
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 12px; 
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+  opacity: 0; 
 }
 
 .option-card.open {
@@ -246,8 +250,8 @@
 }
 
 .option-card.open p {
-  max-height: 500px; /* Keep for expandable behavior (adjust if needed) */
-  opacity: 1; /* Show description when open */
+  max-height: 500px; 
+  opacity: 1; 
 }
 
 @media (min-width: 900px) {

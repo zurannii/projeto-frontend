@@ -17,22 +17,20 @@ const valores = [
   },
 ];
 
-// Modified ValorCard to handle open state and display description
 function ValorCard({ title, desc, isOpen, onClick }) {
   return (
     <button className={`valor-card ${isOpen ? 'open' : ''}`} onClick={onClick}>
       <div className="valor-card-title">{title}</div>
-      {/* Description is conditionally rendered based on isOpen */} 
       {isOpen && desc && <div className="valor-card-description">{desc}</div>}
     </button>
   );
 }
 
 export default function ValorSection() {
-  const [openCardIndex, setOpenCardIndex] = useState(null); // State to track open card index
+  const [openCardIndex, setOpenCardIndex] = useState(null); 
 
   const handleCardClick = (index) => {
-    setOpenCardIndex(openCardIndex === index ? null : index); // Toggle open state
+    setOpenCardIndex(openCardIndex === index ? null : index); 
   };
 
   return (

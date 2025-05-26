@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from 'react';
-import './TeamCard.css'; // Import the new equipe.css file
+import './TeamCard.css'; 
 
 const equipe = [
   {
@@ -54,7 +54,7 @@ export default function EquipeSection() {
 
   const scrollSlider = (direction) => {
     if (sliderRef.current) {
-      const scrollAmount = 300; // Adjust this value based on your needs
+      const scrollAmount = 300; 
       const currentScroll = sliderRef.current.scrollLeft;
       const newScroll = direction === 'left' 
         ? currentScroll - scrollAmount 
