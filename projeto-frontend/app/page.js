@@ -7,7 +7,7 @@ import Footer from '@/components/Footer/Footer';
 
 // Dynamically import the PopularResidences component
 const PopularResidences = dynamic(
-  () => import('@/components/PopularResidences/PopularResidences'), // Importa o componente da seção
+  () => import('@/components/PopularResidences/PopularResidences'), 
   { ssr: false }
 );
 
@@ -16,11 +16,8 @@ function App() {
     <div className="App">
       <Header/>
       <Hero/>
-      {/* Renderiza o componente PopularResidences abaixo do Hero */} 
       <PopularResidences/>
-      {/* Add the Contact Section below PopularResidences */}
       <ContactSection/>
-      {/* Add the Footer below the Contact Section */}
       <Footer/>
     </div>
   );

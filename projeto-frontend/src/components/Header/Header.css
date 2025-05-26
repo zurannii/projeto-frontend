@@ -12,7 +12,6 @@
     padding-bottom: 1rem; /* Padding vertical específico do container interno */
     padding-top: 1rem; /* Padding vertical específico do container interno */
     color: var(--secondary); /* Cor padrão para elementos dentro do container que não são brancos (links inativos) */
-    /* Propriedades de layout flex (display, align-items, etc.) e box model (max-width, margin) são tratadas por .flexCenter e .innerWidth no JSX */
 }
 
 .h-menu{
