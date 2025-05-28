@@ -1,7 +1,7 @@
 import Header from '@/components/Header/Header';
 import { FaSearch } from 'react-icons/fa';
-import ResidenceCard from '@/components/ResidenceCard';
-import './imoveis.css';
+import ResidenceCard from '@/components/ResidenceCard/ResidenceCard';
+import './imoveis.css'; 
 
 const residences = [
   {
