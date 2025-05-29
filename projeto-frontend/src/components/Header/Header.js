@@ -18,7 +18,7 @@ const Header = () => {
                     <Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link>
                     <Link href="/imoveis" className={pathname === "/imoveis" ? "active" : ""}>Imóveis</Link>
                     <Link href="/nosso-valor" className={pathname === "/nosso-valor" ? "active" : ""}>Nosso Valor</Link>
-                    <a href="">Consultores</a>
+                    <Link href="/consultores" className={pathname === "/consultores" ? "active" : ""}>Consultores</Link> 
 
                     <div className="h-user-icon">
                       <LiaUserCircle size={40} />
