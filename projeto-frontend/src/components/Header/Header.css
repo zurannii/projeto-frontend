@@ -184,3 +184,15 @@
     }
     /* Outros ajustes responsivos para .h-container, .h-menu a, etc., se necessário, mas o básico de layout vem dos utilitários e do menu mobile posicionado */
 }
+
+.login-link {
+  color: #F7FCFC; /* Cor do texto do link */
+  margin-left: 16px; /* Espaçamento para alinhar com o ícone */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.login-link:hover {
+  color: #D1EBDB; /* Cor no hover */
+  text-decoration: underline; /* Underline no hover */
+}
