@@ -11,21 +11,21 @@ const equipe = [
   },
   {
     nome: 'Jansen Okasaki',
-    area: 'Área - FrontEnd',
+    area: 'Área - FullStack',
     desc: 'Estudante do curso de Sistemas para Internet e amante da tecnologia.',
-    image: ''
+    image: '/assets/jansen.jpeg'
   },
   {
     nome: 'Luana Cabral',
-    area: 'área',
-    desc: 'Lorem ipsum dolor sit amet. Et explicabo enim in galsium tempore',
-    image: ''
+    area: 'Área - FrontEnd',
+    desc: 'Estudante de Sistemas para Internet, entusiasta de dados, automação e soluções digitais.',
+    image: '/assets/luana.jpeg'
   },
   {
     nome: 'Roberta Nascimento',
-    area: 'área',
-    desc: 'Lorem ipsum dolor sit amet. Et explicabo enim in galsium tempore',
-    image: ''
+    area: 'Área - Designer e FullStack',
+    desc: 'Estudante de Sistemas para Internet, determinada e resiliente.',
+    image: '/assets/roberta.jpeg'
   }
 ];
 
