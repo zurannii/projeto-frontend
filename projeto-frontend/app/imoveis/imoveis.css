@@ -1,39 +1,40 @@
 .imoveis-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 24px 32px 24px;
+  padding: 48px 24px 64px 24px;
 }
 
 .imoveis-header-row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 32px;
+  gap: 48px;
   margin-bottom: 48px;
   flex-wrap: wrap;
 }
 
 .imoveis-title {
-  margin-bottom: 16px;
-  line-height: 1.1;
+  margin-bottom: 12px;
+  line-height: 1.2;
+  font-size: 2.5rem;
 }
 
 .imoveis-desc {
   color: #444;
-  font-size: 1rem;
-  max-width: 480px;
+  font-size: 1.1rem;
+  max-width: 550px;
 }
 
 .imoveis-filter-box {
   display: flex;
   align-items: center;
   background: #fff;
-  border: 1.5px solid #ddd;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 0 12px;
-  height: 40px;
-  min-width: 200px;
-  box-shadow: 0 2px 8px #0001;
+  padding: 0 16px;
+  height: 45px;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .imoveis-filter-input {
@@ -47,35 +48,64 @@
 
 .imoveis-filter-icon {
   color: #888;
-  font-size: 1.1rem;
-  margin-left: 6px;
+  font-size: 1.2rem;
+  margin-left: 8px;
 }
 
 .imoveis-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
   justify-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+
+  .imoveis-main {
+    padding: 32px 16px 48px 16px;
+  }
 
   .imoveis-header-row {
     flex-direction: column;
-    gap: 18px;
-    margin-bottom: 28px;
+    gap: 24px;
+    margin-bottom: 32px;
   }
 
   .imoveis-title {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    margin-bottom: 8px;
   }
 
   .imoveis-desc {
-    font-size: 0.95rem;
+    font-size: 1rem;
+  }
+
+  .imoveis-filter-box {
+    min-width: 100%;
   }
 
   .imoveis-grid {
-    gap: 18px;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   
+}
+
+@media (max-width: 480px) {
+  .imoveis-main {
+    padding: 24px 12px 32px 12px;
+  }
+
+  .imoveis-title {
+    font-size: 1.8rem;
+  }
+
+  .imoveis-desc {
+    font-size: 0.9rem;
+  }
+
+  .imoveis-grid {
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 } 

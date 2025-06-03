@@ -1,0 +1,133 @@
+/* src/components/FilterModal/FilterModal.css */
+.filter-modal-content {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 768px) {
+  .filter-modal-content {
+    /* Reverte para centralização no flex container */
+    position: static;
+    width: 90%;
+    max-width: 90%;
+    max-height: 90vh;
+    top: auto; /* Reseta */
+    right: auto; /* Reseta */
+  }
+}
+
+.filter-modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.2rem;
+  color: #333; /* Cor do texto */
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #555; /* Cor do texto secundário */
+}
+
+.filter-section input[type="text"],
+.filter-section select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+.filter-option-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e0f2f1; /* Fundo verde claro */
+  color: #00796b; /* Texto verde escuro */
+  padding: 6px 10px;
+  border-radius: 16px; /* Formato de pill */
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.remove-filter {
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #004d40; /* Verde mais escuro */
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.filter-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.remove-button {
+  background-color: #eee;
+  color: #333;
+}
+
+.filter-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.remove-button:hover {
+  background-color: #ddd;
+}
+
+.filter-button:hover {
+  background-color: #388e3c;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 480px) {
+  .filter-modal-content {
+    padding: 16px;
+  }
+
+  .filter-modal-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .filter-section h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .filter-actions button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+} 
