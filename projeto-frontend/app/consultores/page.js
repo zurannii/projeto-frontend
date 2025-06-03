@@ -1,6 +1,5 @@
-import Header from '@/components/Header/Header'
+import Header from '@/components/Header/Header';
 import ResidenceCard from '@/components/ResidenceCard/ResidenceCard';
-import './consultoresPage.css'; 
 
 export default function consultoresPage (){
     return(

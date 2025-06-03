@@ -5,6 +5,7 @@ import './Header.css'
 import Link from 'next/link';
 import { LiaUserCircle } from "react-icons/lia";
 import { usePathname } from 'next/navigation';
+import { FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
     const pathname = usePathname();
@@ -31,14 +32,12 @@ const Header = () => {
 
                     {/* Conditionally render Login link or User Icon */}
                     {isLoggedIn ? (
-                        <Link href="/profile">{/* Link to user profile or dashboard */}
-                            <div className="h-user-icon">
-                                <LiaUserCircle size={40} />
-                            </div>
+                        <Link href="/cadastro">
+                            <FaUserCircle size={30} className="userIcon" />
                         </Link>
                     ) : (
-                        <Link href="/login">{/* Link to login page */}
-                            <span className="login-link">Login</span>
+                        <Link href="/cadastro" className="loginLink">
+                            Login
                         </Link>
                     )}
                 </div>
