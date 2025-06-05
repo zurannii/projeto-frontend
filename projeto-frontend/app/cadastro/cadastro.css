@@ -165,7 +165,7 @@ body {
 
 .continue-button {
   background-color: #314743;
-  color: white;
+  color: #fff;
   border: none;
 }
 
@@ -174,14 +174,13 @@ body {
 }
 
 .back-button {
-  background-color: white;
+  background-color: #fff;
   color: #314743;
   border: 1px solid #314743;
 }
 
 .back-button:hover {
-  background-color: #314743;
-  color:w;
+  background-color: #e6eaea;
 }
 
 .signup-image-container {
@@ -191,8 +190,7 @@ body {
     rgba(60, 87, 89, 0) 0%,
     rgba(54, 80, 81, 0.49) 70%,
     rgba(60, 87, 89, 0.44) 100%
-  ), url('/assets/casa-login.png');
-  background-size: cover;
+  ), url('/assets/casa-login.png');   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-width: 400px;
