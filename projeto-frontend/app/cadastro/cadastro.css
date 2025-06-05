@@ -1,17 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f0f2f5;
 }
 
 .signup-container {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 10px) !important; 
-  height: auto !important; 
-  background-color: #f0f2f5;
-  overflow-y: auto; 
-  padding-top: 0; 
-  margin-top: -5px; 
+  min-height: calc(100vh - 10px);
+  height: auto;
+  overflow-y: auto;
+  padding-top: 0;
+  margin-top: -5px;
 }
 
 .signup-header {
@@ -21,7 +21,6 @@ body {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  margin-top: 0; 
 }
 
 .signup-logo {
@@ -36,20 +35,19 @@ body {
   border: 1px solid #ddd;
   z-index: 2;
   overflow: hidden;
-  margin: 10px auto; 
-  max-width: 1000px; 
-  width: 95%; 
-  height: auto; 
+  margin: 10px auto;
+  max-width: 1000px;
+  width: 95%;
+  height: auto;
   box-sizing: border-box;
 }
 
 .signup-form-container {
-  padding: 5px 30px;
+  padding: 30px;
   text-align: center;
   min-width: 320px;
   width: 50%;
   position: relative;
-  margin-top: 10px; 
 }
 
 .signup-avatar {
@@ -57,42 +55,44 @@ body {
   height: 60px;
   background-color: #aed5dc;
   border-radius: 50%;
-  margin: 0 auto 8px auto;
+  margin: 0 auto 16px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color: #314743;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .signup-form-container h2 {
-  margin-bottom: 8px;
-  color: #333;
-  font-size: 1em;
+  margin-bottom: 15px;
+  color: #314743;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 
 .form-group {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   text-align: left;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 3px;
-  font-weight: bold;
+  margin-bottom: 4px;
+  font-weight: 600;
   color: #555;
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 .form-group input[type="email"],
 .form-group input[type="text"],
 .form-group input[type="tel"] {
   width: 100%;
-  padding: 6px 10px;
+  padding: 8px 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
-  font-size: 0.8em;
+  font-size: 0.9em;
   background-color: #f8f9fa;
   outline: none;
 }
@@ -101,9 +101,9 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 32px;
+  height: 36px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
   background-color: #f8f9fa;
   padding: 0 10px;
@@ -115,7 +115,7 @@ body {
   padding: 6px 0;
   border: none;
   outline: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
   background-color: transparent;
   flex-grow: 1;
 }
@@ -124,9 +124,6 @@ body {
   cursor: pointer;
   color: #65898C;
   font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 8px;
   flex-shrink: 0;
 }
@@ -137,14 +134,14 @@ body {
 
 .error-message {
   color: #dc3545;
-  font-size: 0.65em;
-  margin-top: 1px;
+  font-size: 0.7em;
+  margin-top: 2px;
   display: block;
 }
 
 .forgot-password-link {
   display: block;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-bottom: 20px;
   color: #4D6366;
   text-decoration: underline;
@@ -153,18 +150,14 @@ body {
   margin-left: 2px;
 }
 
-.forgot-password-link:hover {
-  text-decoration: underline;
-}
-
 .continue-button,
 .back-button {
   width: 100%;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 0.85em;
-  margin-bottom: 4px;
+  font-size: 0.9em;
+  margin-bottom: 8px;
 }
 
 .continue-button {
@@ -184,16 +177,17 @@ body {
 }
 
 .back-button:hover {
-  background-color: #e6eaea;
+  background-color: #314743;
+  color: #ffffff;
 }
 
 .signup-image-container {
   flex-grow: 1;
   background-image: linear-gradient(
     to bottom,
-    rgba(60, 87, 89, 0) 0%,      
-    rgba(54, 80, 81, 0.49) 70%,  
-    rgba(60, 87, 89, 0.44) 100%  
+    rgba(60, 87, 89, 0) 0%,
+    rgba(54, 80, 81, 0.49) 70%,
+    rgba(60, 87, 89, 0.44) 100%
   ), url('/assets/casa-login.png');
   background-size: cover;
   background-position: center;
@@ -214,22 +208,17 @@ body {
 @media (max-width: 768px) {
   .signup-content {
     flex-direction: column;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 
   .signup-image-container {
-    display: none; 
+    display: none;
   }
 
   .signup-form-container {
     width: 100%;
     padding: 20px;
-  }
-
-  .continue-button,
-  .back-button {
-    font-size: 1em;
   }
 
   .form-row {
